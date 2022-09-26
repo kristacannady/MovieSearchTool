@@ -2,7 +2,7 @@
 <!-- Page Set Up + Linking Style Sheets -->
 <html>
 <head>
-  <title>Movie Search Tool</title>
+  <title>Movie Finder</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./Assets/style.css"/>
@@ -11,16 +11,27 @@
 </head>
 
 <body>
-<!-- Create Search Bar Text Field -->
   <header>
-    <form id="form">
-        <input type="text" id="search" placeholder="Search..." class="search" />
-        <button>Search</button>
-      </form>
-  </header>
+    <h1 class="title">Movie Finder</h1>
+</header>
 
+<!-- Create Search Bar Text Field using Bulma-->
+    <div class="field has-addons">
+        <div class="control">
+          <input class="input" type="text" placeholder="Search...">
+        </div>
+        <div class="control">
+          <a class="button is-info"> Search</a>
+        </div>
+      </div>
 
   <main>
+    <section class="section is-large">
+        <h1 class="title">Results</h1>
+        <h2 class="subtitle">
+          The key words searched will allow relevant movies to appear here.
+        </h2>
+      </section>
 </main>
 <footer></footer>
 

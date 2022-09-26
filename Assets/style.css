@@ -1,0 +1,17 @@
+/* Set Up CSS styles */
+:root {
+    --primary-color: 	#356696;
+    --secondary-color: 	#f16e00;
+    --tertiary-color: #9ed7ce;
+  }
+  
+  /* apply styles to Header */
+header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 999;
+  }
