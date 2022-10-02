@@ -5,6 +5,13 @@
     --tertiary-color: #9ed7ce;
   }
   
+/* defining background image */
+body {
+  /* Photo by Corina Rainer on Unsplash */
+  background-image: url("./Images/corina-rainer-P2wLo_PzHjU-unsplash.jpg"); 
+  background-size: cover;
+}
+
   /* apply styles to Header */
 header {
     padding: 20px 35px;
