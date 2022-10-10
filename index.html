@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<!-- Page Set Up + Linking Style Sheets -->
-<html>
+<html lang="en">
+<!-- Header -->
 <head>
-    <title>Movie Finder</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Linking Bulma as CSS framework -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Tool</title>
 
-<!-- Header edits -->
-<body>
-    <header>
-        <h1 class="title">Movie Finder</h1>
-        <!-- Create Search Bar Text Field using Bulma-->
-        <div class="field has-addons">
-            <div class="control">
-                <input class="input" type="text" placeholder="Search...">
-            </div>
-            <button type="submit" id='clickme' class="button">Search</button>
+    <!-- Stylesheet -->
+    <link rel=“stylesheet”
+    href=“https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css” />
+    <link rel="stylesheet" href="Assets/style.css" />
+  </head>
 
-    </header>
-
-    <main>
-    </main>
-    <footer></footer>
-
-    <!-- Link Java Script -->
-    <script src="./Assets/script.js"></script>
-</body>
-
+<!-- Container for searching for the movie -->
+  <body>
+    <div class="container">
+        <div class="search-wrapper">
+            <input type="text" id="movie-inp" placeholder="Search for a movie.." />
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    
+    <!-- Script connecting -->
+    <script src="Assets/script.js"></script>
+  </body>
 </html>

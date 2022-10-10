@@ -18,4 +18,6 @@ This interactive application allows you to search for movies from a masssive dat
 ## Website
 https://kristacannady.github.io/MovieSearchTool/ 
 ## Contribution
-Made with ❤️ by Krista Cannady, Andrew Popio, and Ash Mustafa
+Made with ❤️ by Krista Cannady and Ash Mustafa
+
+
