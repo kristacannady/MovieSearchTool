@@ -1,11 +1,11 @@
-// API URL with API Key.. I had to make an account to get/use this link
-https://api.themoviedb.org/3/movie/{movie_id}?api_key=<<api_key>>&language=en-US
-
-// Variables for search button and API call
+// Variables for search button
 var searchBtn = document.getElementById("search-btn");
 const movieInp = document.getElementById("movie-inp");
+
 // Gets the input from the search the user put in
 const moviesearch = movieInp.value;
+
+// API Call 
 const api_key = "96b0ba6aa451faff19f357f4cbce740b";
 const URL = 'https://api.themoviedb.org/3/search/movie?api_key=96b0ba6aa451faff19f357f4cbce740b&language=en-US&query=${movieInp.value}';
 
