@@ -20,3 +20,5 @@ function fetchData() {
   .then((response) => response.json())
   .then((data) => console.log(data))
 };
+
+// Stopping point --> Cannot get the query in the API URL to update to be what the user searched for. 
