@@ -5,6 +5,29 @@ const movieInp = document.getElementById("movie-inp");
 // API Call
 const api_key = "96b0ba6aa451faff19f357f4cbce740b";
 
+  // Trying to get the data to display on the page
+function resultdiv() {
+const resultElement = document.createElement('div');
+resultElement.setAttribute('class', 'results');
+
+result.innerHTML = `
+<div class="wrapper">
+<h4>Poster:</h4>
+            <img src=${data.poster_path} data-movie-id=${movie.id}/>
+        </div>
+
+     <div class="wrapper">
+        <div class="data-wrapper">
+            <h4>Title:</h4>
+            <span>${Object.values(data[0].title)
+                .toString()
+                .split(",")
+                .join(", ")}</span>
+        </div>
+    </div>
+    `;
+  }
+
 // Function for getting the data from the API
 function fetchData(movie) {
   var searchURL = `https://api.themoviedb.org/3/search/movie?api_key=96b0ba6aa451faff19f357f4cbce740b&language=en-US&query=${movieInp.value}`;
@@ -13,13 +36,10 @@ function fetchData(movie) {
   console.log(searchURL);
   fetch(searchURL)
   .then((response) => response.json())
-  .then((data) => console.log(JSON.stringify(data))
+  .then((data) => console.log(data)
+  // console.log(JSON.stringify(data))
   );
-
-
-  // Trying to get the data to display on the page
 };
-
 
 // Listens for when search button is clicked
 searchBtn.addEventListener("click", fetchData);
